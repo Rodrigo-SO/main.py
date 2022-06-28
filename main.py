@@ -2,14 +2,10 @@ import discord #Importa a biblioteca no discord
 #---------------------------------------
 
 
-
 client = discord.Client()
 #Importa a função Client() da biblioteca discord
 #Coloca a função Client() dentro da Variável "client"
 #---------------------------------------
-
-
-
 
 
 @client.event
@@ -21,10 +17,6 @@ async def on_ready():
 #---------------------------------------
 
 
-
-
-
-  
 @client.event
 #Outro evento criado para iniciar assim que o bot estiver pronto e funcionando
 async def on_message(message):
@@ -38,7 +30,8 @@ async def on_message(message):
     await message.channel.send('Hello!')
 #Condição, SE o conteúdo da mensagem iniciar com "$hello", Envie uma mensagem para o canal dizendo "Hello!"
 #---------------------------------------
-    
+
+
 client.run('OTg5MjkwMTk3NjgwMjYzMTY4.GcdxV7.u-XapoFk4GPq2UYcYOp7cDiHQKtziDS6H9zo6U')
 #Essa linha conecta ao Bot utilizando o TOKEN de identificação dele
 #---------------------------------------
